@@ -43,7 +43,7 @@ function saludo(idioma) {
    else if (idioma = 'undefined') return 'Hola!'; 
 }
 
-function colors(color) {
+function colors(color) { 
    // La función recibe un color. Retornar el string correspondiente:
    // En caso que el color recibido sea "blue"   --> "This is blue".
    // En caso que el color recibido sea "red"    --> "This is red".
@@ -52,12 +52,28 @@ function colors(color) {
    // Si no es ninguno de esos colores           --> "Color not found".
    // IMPORTANTE: utilizar el statement SWITCH.
    // Tu código:
+   switch (color) {
+      case 'blue':
+      return 'This is blue';
+      break;
+      case 'red':
+      return 'This is red'
+      break;
+      case 'green': 
+      return 'This is green';
+      break;
+      case 'orange':
+      return 'This is orange';
+      break;
+         default: 'Color not found';}
 }
 
 function esDiezOCinco(num) {
    // Retornar true si "num" es 10 o 5.
    // De lo contrario, retornar false.
    // Tu código:
+   if (num == 10 || 5) return true;
+   else false;
 }
 
 function estaEnRango(num) {
